@@ -1,0 +1,40 @@
+.done{
+    text-decoration: line-through;
+    color: darkslateblue;
+}
+.task{
+    width: 100px;
+    background: gold;
+    height: 34px;
+    color: white;
+    border: 0;
+
+}
+.search{
+    height: 30px;
+    width: 150px;
+    border: 1px solid darkslateblue;
+
+}
+.clear{
+    background: white;
+    color: darkslateblue;
+    height: 34px;
+    border: 1px solid darkslateblue;
+
+}
+form{
+    display: inline-block;
+}
+.point{
+    background: white;
+    padding: 10px 0 10px 10px;
+    margin: 2px 0;
+    width: 500px;
+}
+body{
+    background: cornflowerblue;
+}
+li{
+    list-style: none;
+}

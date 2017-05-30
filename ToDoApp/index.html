@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="ToDo">
+<head>
+    <meta charset="utf-8">
+    <title>ToDo</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div ng-controller="todoController">
+        <form name="frm" ng-submit="addTodo()">
+            <input type="text" name="newtodo" ng-model="newTodo" required class="search"/>
+            <button ng-disabled="frm.$invalid" class="task">Go</button>
+        </form>
+        <button ng-click="clearCompleted()" class="clear">Clear Completed</button>
+        <ul>
+            <li ng-repeat="todo in todos" class="point">
+                <input type="checkbox" ng-model="todo.done" />
+                <span ng-class="{'done':todo.done}">{{todo.title}}</span>
+
+            </li>
+        </ul>
+
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
