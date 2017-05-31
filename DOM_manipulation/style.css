@@ -1,0 +1,8 @@
+.box{
+    border: 5px solid darkslategrey;
+    display: block;
+}
+#theX{
+    font-size: 10px;
+}
+
